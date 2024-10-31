@@ -1,4 +1,11 @@
-# launch
+# How to Auto-pass argument in Debug mode in vs code
+
+this guides about Using vocodes Workplace settings, custom debugs as way to save time
+
+
+
+## Edit `Loanch.json`  -ing
+
 1. Open `launch.json` (ctrl+shift+p)
 2. add theses 
 ``` json
@@ -18,17 +25,21 @@
     ]
 }
 ```
-## argument :
+### Argument -ing:
+
 - you can add more argument in `args` field, search on google if you want more complex
 	- arguments without value : `"args": ["arg1", "arg2", "arg3"]`
-	- argument with value (not tested) :  
-## Name:
+	- argument with value (not tested) :  `"args": ["--arg1", "value1", "--arg2", "value2"]`
+### Name -ing : 
+
 - you can name your custom debug in `name` field 
-# test
+## Test the Our customized launcher 
 
-this steps to make sure your `launch.json` is be written right make script copy paste them and save th, then run debug mode
+this steps to make sure your `launch.json` is being written right 
 
-``` ahk
+1. make script copy paste them and save as `AHK` file, then run the new debug mode
+
+``` ahkv2
 
 if A_Args.Length > 0{
     MsgBox "passed with agruments"
@@ -43,6 +54,8 @@ if A_Args.Length > 0{
         }
     
 
+}{
+    MsgBox "didn't passed with agruments"
 }
 
 
@@ -51,14 +64,22 @@ if isDebugEnabled == false {
 }
 ```
 
-<mark style="background: yellow" >Hello world  </mark>
 
-<mark style="background: #BBFABBA6;">name your custom</mark>
 
-| `$${\color{yellow}Yellow}$$` |      |
-| ---------------------------- | ---- |
-|                              |      |
+## Run Our debugers 
 
-sss $${\color{yellow}Yellow}$$ sss
+1. ![[attachments/Pasted image 20241031161340.png]]
 
-`$${\color{yellow}Yellow}$$`
+2. ![[attachments/Pasted image 20241031161353.png]]
+
+   
+
+## `[Opt => speed up]` Custom shortcut for Our new Customized debuggers
+
+1. install this addon https://marketplace.visualstudio.com/items?itemName=ArturoDent.launch-config
+2. 
+
+## Thanks and sources
+
+- https://stackoverflow.com/questions/57889703/in-visual-studio-code-how-to-pass-arguments-in-launch-json
+- https://stackoverflow.com/questions/48645098/vscode-keyboard-shortcut-for-launch-configuration

@@ -1,0 +1,1 @@
+[[How to Auto-passed argument in debug mode]]
