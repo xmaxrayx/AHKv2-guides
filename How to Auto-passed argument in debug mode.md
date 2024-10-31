@@ -54,3 +54,11 @@ if isDebugEnabled == false {
 <mark style="background: yellow" >Hello world  </mark>
 
 <mark style="background: #BBFABBA6;">name your custom</mark>
+
+| `$${\color{yellow}Yellow}$$` |      |
+| ---------------------------- | ---- |
+|                              |      |
+
+$${\color{yellow}Yellow}$$
+
+`$${\color{yellow}Yellow}$$`
